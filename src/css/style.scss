@@ -1,0 +1,7 @@
+@import "_settings.scss";
+@import "~foundation-sites/scss/foundation.scss";
+@include foundation-everything;
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+@import "nav.scss";
+@import "sideNav.scss";
