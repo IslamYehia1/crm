@@ -1,0 +1,183 @@
+<div id="customersInfo" class="cell medium-7 grid-y grid-padding-y">
+  <!-- Area to add a new cst  -->
+  <div id="addCst" class="cell grid-y" data-closable>
+    <div class="cell grid-x grid-padding-x">
+      <button
+        id="addCstBtn"
+        data-open="addCstModal"
+        class="cell medium-2 button primary"
+      >
+        <i class="fas fa-plus"></i> New customer
+      </button>
+    </div>
+    <form id="addCstForm" class="cell grid-y">
+      <div class="cell grid-x grid-padding-x">
+        <div class="cell medium-12">
+          <button
+            style="position: relative"
+            class="close-button float-right"
+            aria-label="Close alert"
+            type="button"
+            data-close
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+      <div class="cell grid-x grid-margin-x">
+        <h6 class="cell medium-3">Name</h6>
+        <div class="cell medium-6">
+          <label for="">
+            <input type="text" placeholder="First name" />
+          </label>
+        </div>
+        <div class="cell medium-3">
+          <label for="">
+            <input type="text" placeholder="Last name" />
+          </label>
+        </div>
+      </div>
+
+      <div class="cell grid-x grid-margin-x">
+        <h6 class="cell medium-3">Contact Info</h6>
+        <div class="cell medium-3">
+          <label for="">
+            <input type="text" placeholder="Phone number" />
+          </label>
+        </div>
+        <div class="cell medium-auto">
+          <label for="">
+            <input type="text" placeholder="Email address" />
+          </label>
+        </div>
+      </div>
+
+      <div class="cell grid-x grid-margin-x">
+        <h6 class="cell medium-3">Address</h6>
+        <div class="cell medium-1">
+          <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <div class="cell medium-4">
+          <label for="">
+            <input type="text" placeholder="Address" />
+          </label>
+        </div>
+        <div class="cell medium-2">
+          <label for="">
+            <input type="text" placeholder="City" />
+          </label>
+        </div>
+        <div class="cell medium-2">
+          <label for="">
+            <input type="number" placeholder="Zip Code" />
+          </label>
+        </div>
+      </div>
+
+      <div class="cell grid-x grid-margin-x">
+        <h6 class="cell medium-3">Campaign and plan</h6>
+        <div class="cell medium-3">
+          <select name="cars" id="cars">
+            <option value="volvo">Tech Magazine</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <div class="cell medium-auto">
+          <select name="cars" id="cars">
+            <option value="volvo">Basic Package</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+
+        <div class="cell medium-auto">
+          <select name="cars" id="discountSelect">
+            <option value="0">0% Discount</option>
+            <option value="1">15% Discount</option>
+            <option value="2">30% Discount</option>
+            <option value="customDiscount">Custom discount</option>
+          </select>
+        </div>
+      </div>
+      <div class="cell grid-x grid-margin-x">
+        <span class="cell medium-12">
+          <button class="button float-right primary">Submit</button>
+        </span>
+      </div>
+    </form>
+
+    <div id="customDiscount" class="cell grid-x grid-margin-x">
+      <h6 class="cell medium-3">Custom Discount</h6>
+
+      <div class="cell medium-2">
+        <select name="cars" id="cars">
+          <option value="volvo">$ Amount</option>
+          <option value="volvo">Percentage</option>
+        </select>
+      </div>
+      <div class="cell medium-auto">
+        <label for="">
+          <input type="text" placeholder="Discount" />
+        </label>
+      </div>
+      <div class="cell medium-3">
+        <label for="">
+          <input type="text" placeholder="Period in months" />
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="cell grid-x grid-margin-x">
+    <table class="cell">
+      <thead>
+        <tr>
+          <th width="200">Customer Name</th>
+          <th width="200">Address</th>
+          <th width="100">Zip Code</th>
+          <th width="150">Sign up</th>
+          <th width="150">Campaign</th>
+          <th width="150">Plan</th>
+          <th width="150">Discount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Adam Sandler</td>
+          <td>219 Howdy Road , Az</td>
+          <td>12345</td>
+          <td>03/09/2020</td>
+          <td>Tech</td>
+          <td>Basic</td>
+          <td>0%</td>
+        </tr>
+        <tr>
+          <td>Adam Sandler</td>
+          <td>219 Howdy Road , Az</td>
+          <td>12345</td>
+          <td>03/09/2020</td>
+          <td>Tech</td>
+          <td>Basic</td>
+          <td>30%</td>
+        </tr>
+        <tr>
+          <td>Adam Sandler</td>
+          <td>219 Howdy Road , Az</td>
+          <td>12345</td>
+          <td>03/09/2020</td>
+          <td>Tech</td>
+          <td>Basic</td>
+          <td>40%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

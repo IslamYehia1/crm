@@ -1,0 +1,169 @@
+
+  <div class="grid-y medium-grid-frame">
+    <div id="planDetailsBody" class="cell medium-shrink">
+      <div class="grid-x input-group">
+        <span class="cell small-1 input-group-label text-center">
+          <i class="material-icons">search</i>
+        </span>
+
+        <input class="cell small-11 input-group-field" type="textarea" />
+      </div>
+      <div class="card">
+        <div class="card-divider grid-y">
+          <div class="cell settingContainer">
+            <div class="grid-x">
+              <h4 id="planSettingsHeading" class="cell small-9">
+                Plan settings
+              </h4>
+              <div class="cell small-3">
+                <button id="addConfBtn" class="button small clear float-right">
+                  <i class="fas fa-plus"></i>Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cell settingContainer">
+            <div class="grid-x">
+              <div class="cell medium-5 small-11">
+                <h5 class="setting">Enable individual element pricing</h5>
+              </div>
+              <div class="cell switch tiny small-1 editSetting medium-order-2">
+                <input
+                  class="switch-input"
+                  id="pricePerElement"
+                  type="checkbox"
+                  name="exampleSwitch"
+                />
+                <label class="switch-paddle" for="pricePerElement">
+                  <span class="switch-active" aria-hidden="true">Yes</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+                </label>
+              </div>
+              <span class="cell medium-6 medium-order-1 small-12 settingValue"
+                >When turned on each plan element will have it's own price that
+                will be added to the total.</span
+              >
+            </div>
+          </div>
+          <!-- Plan settings stack up vertically(y-grid) -->
+          <div class="cell settingContainer">
+            <div class="grid-x">
+              <span class="cell medium-5 small-11">
+                <h5 class="setting">Total Price</h5>
+              </span>
+              <span class="cell medium-order-2 small-1 editSetting">Edit</span>
+
+              <span class="cell medium-order-1 medium-6 small-12 settingValue"
+                >50$ , including: 30$ base price, and 20$ Taxes</span
+              >
+            </div>
+          </div>
+          <!-- Modal for adding a setting -->
+          <div id="empty"></div>
+        </div>
+
+        <div class="card-section grid-x">
+          <h4 class="cell small-12">Plan Elements</h4>
+          <ul id="planElements" class="cell small-12 menu vertical">
+            <li>
+              <a class="float-right"
+                ><i class="fas fa-trash-alt float-right"></i
+              ></a>
+              <a class="float-right"><i class="fas fa-edit float-right"></i></a>
+              <span class="elementPrice">50$</span>
+              <span>Job Posting</span>
+            </li>
+            <li>
+              <a class="float-right"
+                ><i class="fas fa-trash-alt float-right"></i
+              ></a>
+              <a class="float-right"><i class="fas fa-edit float-right"></i></a>
+              <span class="elementPrice">50$</span>
+              <span>Unlimited user accounts</span>
+            </li>
+            <li>
+              <a class="float-right"
+                ><i class="fas fa-trash-alt float-right"></i
+              ></a>
+              <a class="float-right"><i class="fas fa-edit float-right"></i></a>
+              <span class="elementPrice">50$</span>
+              <span>Android & iOS mobile Access</span>
+            </li>
+            <li>
+              <a class="float-right"
+                ><i class="fas fa-trash-alt float-right"></i
+              ></a>
+              <a class="float-right"><i class="fas fa-edit float-right"></i></a>
+              <span class="elementPrice">50$</span>
+              <span>Advanced reporting</span>
+            </li>
+            <li>
+              <a class="float-right"
+                ><i class="fas fa-trash-alt float-right"></i
+              ></a>
+              <a class="float-right"><i class="fas fa-edit float-right"></i></a>
+              <span class="elementPrice">50$</span>
+              <span>Unlimited email surrport</span>
+            </li>
+          </ul>
+          <div class="reveal-overlay">
+            <div class="reveal grid-y" id="addingAnElement">
+              <div class="cell">
+                <h4>Add a plan element</h4>
+              </div>
+              <div class="cell grid-x">
+                <p class="cell small-4 lead">Name of the element</p>
+                <input
+                  class="cell small-8"
+                  type="text"
+                  name=""
+                  id="inputElementName"
+                />
+              </div>
+              <div class="cell grid-x">
+                <p class="cell small-4 lead">The element's price</p>
+                <input
+                  class="cell small-8"
+                  value="0"
+                  type="number"
+                  name=""
+                  id=""
+                />
+              </div>
+
+              <p>CLick here to add a property for this element only</p>
+              <button
+                class="close-button"
+                data-close
+                aria-label="Close modal"
+                type="button"
+                id="closeAddElementModalBtn"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div id="modoalButton" class="grid-x">
+                <div class="button-group small-6">
+                  <button class="button primary expanded" id="modalSaveButton">
+                    Save
+                  </button>
+                </div>
+                <div class="cell small-6">
+                  <button id="modalCancelButton" class="button alert expanded">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            id="addElementBtn"
+            class="cell small-12 button small hollow expanded primary"
+          >
+            Add
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
